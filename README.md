@@ -1,1 +1,1 @@
-# image-comparison-slider-block
+# image-swap-on-hover-wordpress-block
