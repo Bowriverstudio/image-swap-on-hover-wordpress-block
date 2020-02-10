@@ -11,14 +11,17 @@ import defaultImageSrc from './default-image-src'
  */
 class SaveComponent extends Component {
     render() {
-        const {attributes, className} = this.props;
-        const image = attributes.image.url || defaultImageSrc
-        const imageHover = attributes.imageHover.url || defaultImageSrc
+        const {attributes, attributes: {urlImage}, className} = this.props;
+        const defaultImage = attributes.defaultImage.url || defaultImageSrc
+        const hoverImage = attributes.hoverImage.url || defaultImageSrc
+
 
         return (
-            <div className={`${className}`}>
-                <img src={image}/>
-                <img src={imageHover}/>
+            <div className={`  ${className ? className : ''}`} style={{width: '100%'}}>
+                <a className="foo" href={urlImage ? urlImage : '#'}>
+                    <img src={defaultImage}/>
+                    <img src={hoverImage}/>
+                </a>
             </div>
         );
     }

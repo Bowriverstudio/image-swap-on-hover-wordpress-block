@@ -16,16 +16,20 @@ export default registerBlockType(
         title: __('Image Hover', 'image-swap-on-hover'),
         description: __('Image Swap on Hover .', 'image-hover'),
         category: 'common',
-        icon: 'groups',
+        icon: 'format-gallery',
         keywords: [
             __('image', 'image-hover'),
         ],
         attributes: {
-            image: {
+            defaultImage: {
                 url: '',
                 default: '',
             },
-            imageHover: {
+            hoverImage: {
+                url: '',
+                default: '',
+            },
+            urlImage: {
                 url: '',
                 default: '',
             },

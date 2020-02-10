@@ -1,0 +1,22 @@
+.header-image-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header-image-hover h4 {
+    margin: 0 0 10px 0 !important; }
+
+.image-hover-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .image-hover-row .editor-post-image-toggle {
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    border: solid 1px #7e8993;
+    width: 120px;
+    height: 150px;
+    margin: 0 10px 0 0; }
+    .image-hover-row .editor-post-image-toggle .slider-container-input {
+      display: flex; }
